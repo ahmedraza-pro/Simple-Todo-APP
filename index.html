@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Appt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>Tasks To Do</h1>
+        <div class="center">
+            <div class="todo">
+                <div class="addBox align-center">
+                    <input type="text" id="newTask" placeholder="Enter a new task">
+                    <button id="addTask" class="flex-center" onclick="addItem()">
+                        <img src="./images/add.svg" width="30" alt="add">
+                    </button>
+                </div>
+                <div class="taskBox" hidden>
+                    <div class="filterBox align-center">
+                        <img src="./images/filter.svg" width="16" alt="filter">
+                        <div class="filters">
+                            <input type="radio" name="filter" value="all" onclick="filterTasks()" checked>
+                            <input type="radio" name="filter" value="pending" onclick="filterTasks()">
+                            <input type="radio" name="filter" value="completed" onclick="filterTasks()">
+                        </div>
+                        <button  class="deleteAll flex-center" onclick="deleteAllTasks()">
+                            <img src="./images/delete.svg" width="18" alt="delete">
+                            <span>Delete All</span>
+                        </button>
+                    </div>
+                    <ul id="taskList">
+                        <!-- Tasks will Add Dynamically -->
+                    </ul>
+                    <div class="empty" style="display: none;">
+                        <img src="./images/no-task.svg" width="50" alt="empty">
+                        <p>No tasks to display</p>
+                    </div>
+                    <div class="clearCompletedContainer">
+                        <!-- <button class="" id="clearCompleted" onclick="clearCompleted()">
+                            <img src="./images/cross-purple.svg" width="12" alt="cross">
+                            <span>Clear Completed</span>
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

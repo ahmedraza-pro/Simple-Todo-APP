@@ -1,0 +1,48 @@
+.flex{
+    display: flex;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.purple {
+    /* Apply color matrix to map black to purple */
+    /* filter: brightness(0) saturate(100%) invert(30%) sepia(40%) saturate(400%) hue-rotate(250deg) brightness(90%); */
+    filter: brightness(0) invert(0.5) sepia(1) saturate(100) hue-rotate(270deg);
+
+  }
+  
+.red {
+    /* Apply color matrix to map black to purple */
+    /* filter: brightness(0) saturate(100%) invert(30%) sepia(40%) saturate(400%) hue-rotate(250deg) brightness(90%); */
+    filter: brightness(0) invert(0.5) sepia(1) saturate(100);
+
+  }
+  
+
+  /* Apply to the entire document */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    margin: 20px;
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Light background for the track */
+    border-radius: 10px;
+}
+
+/* Thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background-color: #734ddf; /* Main scrollbar color */
+    border-radius: 10px;
+}
+
+/* Hover effect on the thumb */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #5c3dbe; /* Darker shade on hover for visibility */
+}
