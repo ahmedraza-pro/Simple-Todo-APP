@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2b60e5;
+      }
+
+      .cls-2 {
+        fill: #5c83e5;
+        filter: url(#filter);
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        filter: url(#filter-2);
+      }
+    </style>
+    <filter id="filter" x="401" y="95.969" width="672" height="818.812" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="401" y="95.9688" width="672" height="818.812" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNjcyIiBoZWlnaHQ9IjgxOC44MTIiIHZpZXdCb3g9IjAgMCA2NzIgODE4LjgxMiI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgb3BhY2l0eTogMC4zOwogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB5MT0iNzQ1LjQwNiIgeDI9IjY3MiIgeTI9IjczLjQwNiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuMzM1IiBzdG9wLWNvbG9yPSIjMmI2MGU1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMC42NjUiIHN0b3AtY29sb3I9IiMyZDYxZTUiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNjcyIiBoZWlnaHQ9IjgxOC44MTIiLz4KPC9zdmc+Cg=="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="222.875" y="95" width="847.125" height="713" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="222.875" y="95" width="847.125" height="713" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODQ3LjEyNSIgaGVpZ2h0PSI3MTMiIHZpZXdCb3g9IjAgMCA4NDcuMTI1IDcxMyI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgb3BhY2l0eTogMC4zOwogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iNjcuMDYyIiB5MT0iNzEzIiB4Mj0iNzgwLjA2MyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuMzM1IiBzdG9wLWNvbG9yPSIjMmI2MGU1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMC42NjUiIHN0b3AtY29sb3I9IiMyZDYxZTUiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iODQ3LjEyNSIgaGVpZ2h0PSI3MTMiLz4KPC9zdmc+Cg=="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-1" x="10" y="7" width="1063" height="1060" rx="320" ry="320"/>
+  <path id="Rounded_Rectangle_2" data-name="Rounded Rectangle 2" class="cls-2" d="M1073,327V488.108L675.047,886.06a98,98,0,0,1-138.592,0L429.681,779.287a98,98,0,0,1,0-138.593L974.405,95.971A319.085,319.085,0,0,1,1073,327Z"/>
+  <path id="Rounded_Rectangle_2_copy" data-name="Rounded Rectangle 2 copy" class="cls-3" d="M1070,277.241L569.442,778.12c-0.371.383-.722,0.779-1.1,1.158a98.067,98.067,0,0,1-138.66.009c-0.5-.5-0.966-1.021-1.454-1.529L251.557,601.087A98,98,0,0,1,390.15,462.494L499.016,571.36,975.139,95A319.2,319.2,0,0,1,1070,277.241Z"/>
+</svg>
