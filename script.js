@@ -1,3 +1,11 @@
+const initialTasks = [
+    { id: 1, name: 'Work on a painting', completed: true },
+    { id: 2, name: 'Write a short story', completed: false },
+    { id: 3, name: 'Learn a new coding language', completed: true },
+    { id: 4, name: 'Start a new hobby', completed: false },
+    { id: 5, name: 'Work on a craft project', completed: false },
+]
+
 const todo = document.getElementsByClassName('todo')[0];
 const newTaskInput = document.getElementById('newTask');
 const filterInput = document.querySelectorAll('.filterBox input');
@@ -64,7 +72,7 @@ function saveTask(task) {
 
 function getTasks() {
     let tasks = localStorage.getItem('tasks');
-    return tasks ? JSON.parse(tasks) : [];
+    return tasks ? JSON.parse(tasks) : initialTasks;
 }
 
 
@@ -85,7 +93,7 @@ function filterTasks() {
     });
 
     deleteAllButton.querySelector('span').innerHTML = `Delete ${selectedFilter[0].toUpperCase() + selectedFilter.substr(1)} Tasks`
-    
+
     const isEmpty = [...taskList].every(task => task.style.display === 'none');
 
     if (isEmpty) {

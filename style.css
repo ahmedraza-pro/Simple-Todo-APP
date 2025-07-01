@@ -15,25 +15,27 @@
 }
 
 #app::before {
+    --size: 115vw;
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     transform: translate(-50%, -50%);
-    width: 115vw;
-    height: 115vw;
+    width: var(--size);
+    height: var(--size);
     background-color: #734ddf;
     border-radius: 50%;
 }
 
 #app::after {
+    --size: 40vw;
     content: "";
     position: absolute;
     top: 100%;
     left: 100%;
     transform: translate(-50%, -50%);
-    width: 40vw;
-    height: 40vw;
+    width: var(--size);
+    height: var(--size);
     background-color: #734ddf;
     border-radius: 50%;
 }
@@ -51,12 +53,14 @@
 }
 
 .center {
-    width: 550px;
+    max-width: 550px;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.todo{
+
+.todo {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
@@ -99,7 +103,7 @@
     cursor: pointer;
 }
 
-.taskBox{
+.taskBox {
     position: relative;
     width: 100%;
     background-color: #ffffff;
@@ -108,7 +112,7 @@
     padding: 1em 1em 50px;
 }
 
-.filterBox{
+.filterBox {
     height: 24px;
     margin: 1em;
     display: flex;
@@ -116,21 +120,21 @@
     gap: 1em;
 }
 
-.filterBox img[alt="filter"]{
+.filterBox img[alt="filter"] {
     opacity: 0.5;
 }
 
-.filterBox .filters{
-    flex:1;
+.filterBox .filters {
+    flex: 1;
     display: flex;
     gap: 0.5em;
 }
 
-.filterBox input{
+.filterBox input {
     appearance: none;
 }
 
-.filterBox input::before{
+.filterBox input::before {
     content: attr(value);
     text-transform: capitalize;
     font-size: 0.8em;
@@ -140,31 +144,34 @@
     border-radius: 100px;
     cursor: pointer;
 }
-.filterBox input:checked::before{
+
+.filterBox input:checked::before {
     background-color: #734ddf;
     color: #ffffff;
     /* background-color: #734ddf30; */
 }
 
-.deleteAll{
+.deleteAll {
     background: none;
     border: none;
     opacity: 0.5;
     cursor: pointer;
     gap: 2px;
 }
-.deleteAll:hover{
+
+.deleteAll:hover {
     filter: brightness(0) invert(0.5) sepia(1) saturate(100);
     opacity: 1;
 }
 
-.deleteAll span{
+.deleteAll span {
     margin-top: 3px;
     width: 0px;
     text-wrap: nowrap;
     overflow: hidden;
 }
-.deleteAll:hover span{
+
+.deleteAll:hover span {
     width: initial;
 }
 
@@ -189,16 +196,16 @@
     background-color: #734ddf10;
 }
 
-#taskList input[type="checkbox"]{
-    appearance: none ;
+#taskList input[type="checkbox"] {
+    appearance: none;
     width: 20px;
     height: 20px;
     border: 2px solid #b3b3b3;
     box-sizing: border-box;
 }
 
-#taskList input[type="checkbox"]{
-    appearance: none ;
+#taskList input[type="checkbox"] {
+    appearance: none;
     width: 20px;
     height: 20px;
     border: 2px solid #b3b3b3;
@@ -221,17 +228,19 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 #taskList img {
     cursor: pointer;
     opacity: 0.5;
     padding: 5px;
 }
+
 #taskList img:hover {
     opacity: 1;
     filter: brightness(0) invert(0.5) sepia(1) saturate(100);
 }
 
-.empty{
+.empty {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -247,6 +256,7 @@
     /* color: #734ddf; */
     /* font-size: 1em; */
     font-weight: bold;
+    text-wrap: nowrap;
 }
 
 
@@ -271,6 +281,48 @@
 #clearCompleted:hover {
     color: red;
 }
-#clearCompleted:hover img{
+
+#clearCompleted:hover img {
     filter: brightness(0) invert(0.5) sepia(1) saturate(100);
+}
+
+@media (max-width: 425px) {
+    #app::before {
+        --size: 80vh;
+        transform: translate(-50%, -50%);   
+    }
+
+    #app::after {
+        --size: 50vh;
+        transform: translate(-50%, -50%);
+    }
+
+    #app h1 {
+        font-size: 2em;
+        letter-spacing: 0;
+    }
+
+    .center {
+        --top-spacing: 60px;
+        height: calc(100% - var(--top-spacing));
+        padding-top: var(--top-spacing);
+        z-index: 1;
+    }
+
+    .todo {
+        height: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        transform: initial !important;
+    }
+
+    .taskBox {
+        flex: 1;
+        display: initial;
+    }
+
+    #taskList {
+        height: 100%;
+        max-height: 50vh;
+    }
 }
